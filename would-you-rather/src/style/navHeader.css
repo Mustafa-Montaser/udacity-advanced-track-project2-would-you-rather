@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ddd;
+    border-bottom: 1px solid #fff;
+    padding: 0 50px;
+}
+
+header .logo {
+    font-family: "Lobster", cursive;
+    font-size: 35px;
+    color: #333;
+    text-decoration: none;
+}
+
+ul {
+    flex: 2;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 40px;
+}
+
+ul li .link {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+    padding: 5px 15px;
+    border: 2px solid #b5b5b5;
+    border-radius: 15px 15px 0 0;
+    background-color: #b5b5b5;
+    transition: 0.5s;
+}
+
+ul li:nth-child(1) .link {
+    background-color: #c5c2c2;
+    border: 2px solid #c5c2c2;
+}
+
+ul li:nth-child(3) .link {
+    background-color: #9c9c9c;
+    border: 2px solid #9c9c9c;
+}
+
+ul li .link:hover,
+ul li .link.active {
+    border-radius: 15px 15px 0 0;
+    border-color: #fff;
+    background-color: #fff;
+    color: #333;
+}
+
+header .user {
+    padding-left: 20px;
+    flex: 1;
+    border-left: 1px solid #333;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+header .user span {
+    font-size: 20px;
+    font-family: "Lobster", cursive;
+    color: #333;
+}
+
+header .user img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+header .user button {
+    background-color: #555555; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+header .user button:hover {
+    background-color: #008CBA;
+}

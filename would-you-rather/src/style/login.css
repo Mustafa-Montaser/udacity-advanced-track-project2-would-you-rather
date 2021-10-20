@@ -1,0 +1,79 @@
+div.login form {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 5px 5px 10px #333;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+}
+
+div.login form div:first-child {
+    background-color: #e2dddd;
+    padding: 10px;
+    width: 550px;
+    margin-bottom: 30px;
+}
+
+div.login form div:first-child p {
+    padding: 10px;
+    color: #333;
+}
+
+div.login form div:first-child p:nth-child(2) {
+    font-size: 20px;
+    color: #696969;
+}
+
+div.login form > p:nth-of-type(1) {
+    color: #007acc;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px
+}
+
+div.login form > p:nth-of-type(2) {
+    font-size: 20px;
+    margin-bottom: 30px 
+}
+
+div.login form > input[list="users"] {
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 3px 3px 10px #333;
+    padding: 10px 15px;
+    width: 200px;
+    outline: none;
+    font-size: 18px;
+}
+
+div.login form > p:last-of-type {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(230, 59, 59);
+    margin-top: 10px;
+    display: none;
+}
+
+div.login form > button[type="submit"] {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 30px 0;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 5px 0;
+    background-color: #1685cf;
+    cursor: pointer;
+}
+
+div.login form > button[type="submit"]:hover {
+    background-color: #007acc;
+    box-shadow: 3px 3px 10px #333;
+}

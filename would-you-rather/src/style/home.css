@@ -1,0 +1,48 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+div.home {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid #333; */
+    box-shadow: 3px 3px 10px #333;
+    /* height: 100px; */
+    /* padding-bottom: 10px; */
+    border-radius: 10px;
+    width: 600px;
+}
+
+div.home .buttons button {
+    background-color: #b5b5b5;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    width: 300px;
+}
+
+div.home .buttons button:nth-child(1) {
+    border-radius: 10px 0 0 0;
+}
+
+div.home .buttons button:nth-child(2) {
+    border-radius: 0 10px 0 0;
+}
+
+div.home .buttons button:hover,
+div.home .buttons button.active {
+    background-color: #fff;
+}
+
+div.home .questions {
+    display: none;
+}
+
+div.home div.active {
+    display: block;
+}

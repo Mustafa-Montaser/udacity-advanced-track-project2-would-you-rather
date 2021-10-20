@@ -1,0 +1,35 @@
+div.loading {
+    width: 100vw;
+    height: 100vh;
+    background-color: #292929;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.loading p {
+    font-size: 50px;
+    color: #fff;
+    margin-top: -100px;
+    margin-bottom: 50px;
+}
+
+div.loading div {
+    width: 70px;
+    height: 70px;
+    border: 5px solid;
+    border-color: #fff #fff #fff transparent;
+    border-radius: 50%;
+    animation: rot 0.7s linear infinite;
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
